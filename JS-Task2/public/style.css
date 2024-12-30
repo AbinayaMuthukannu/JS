@@ -1,0 +1,27 @@
+.card {
+    height: 100%;
+}
+
+.h1 {
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+    font-family: poppins;
+    text-shadow: 2px 2px 3px lightskyblue;
+    margin-top: 40px;
+}
+
+.requ {
+    color: red;
+}
+
+@media screen and (max-width:600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .hgt {
+        height: 500px;
+    }
+
+}

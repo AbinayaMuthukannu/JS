@@ -1,0 +1,61 @@
+.item{
+    /* text-align: center;
+    height: 410px;
+    width: 520px;
+    display: grid;
+    padding: 20px;
+    font-family:poppins;
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px white;
+    margin-top: 60px;
+    margin-left: 30px;
+     */
+     margin-left: 150px;
+    border: none;
+    box-shadow: 1px 1px 20px  lemonchiffon;    
+    width: 490px;
+   height: 410px;
+   box-sizing: content-box;
+   justify-content: center;
+   border-radius: 15px;
+   padding: 20px;
+   margin-top: 60px;
+   font-family: poppins;
+  
+  
+    
+}
+
+
+ button{
+    width: 75px;
+    margin: 1px;
+    margin-bottom: 6px;
+    box-shadow: 2px 2px 5px pink inset;
+    margin-left: 2px;
+    padding: 60px;
+ }
+
+.container{
+    padding-top: 100px;
+   display: flex;
+   justify-content: end;
+   align-items: end;
+}  
+ input{
+    padding-bottom: 20px;
+ }   
+
+button:hover{
+    color:2px 3px 2px gray;
+}
+body{
+    background-image:url("./assets/calci.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+    
+

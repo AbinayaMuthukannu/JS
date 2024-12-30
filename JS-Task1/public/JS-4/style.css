@@ -1,0 +1,10 @@
+.date{
+    text-align: center;
+    color: #0000ff;
+    text-shadow:2px 3px 2px lightseagreen;
+    font-family: poppins;
+    
+}
+.form-control{
+    width: 80%;
+}

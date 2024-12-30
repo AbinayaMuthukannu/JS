@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-task2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="edit" style="background-color: rgb(235, 183, 192)">
+    <div class="container-fluid mt-3">
+        <h1 class="h1"><b>FORM VALIDATION</b></h1>
+        <div class="row mt-3 mb-3 g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card shadow">
+                    <form>
+                        <div class="card-header bg-primary text-white text-center p-3">
+                            <h2 style="font-family: poppins;">Basic Information </h2>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <label for="user-name" class="form-label"><strong>User Name:</strong></label>
+                                <input type="text" class="form-control" id="user-name" placeholder="Enter Username"
+                                    name="user">
+                                <span id="user-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="gender" class="form-label"><strong>Gender:</strong></label><br>
+                                <input type="radio" class="form-check-input-sm" id="male" name="Gender" value="Male">
+                                <label class="form-check-label" for="men">Male</label>
+                                <input type="radio" class="form-check-input-sm" id="female" name="Gender"
+                                    value="Female">
+                                <label class="form-check-label" for="women">Female</label>
+                                <input type="radio" class="form-check-input-sm" id="others" name="Gender"
+                                    value="Others">
+                                <label class="form-check-label" for="others" id="others">Others</label><br>
+                                <span id="gender-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="Email" class="form-label"><strong>Email:</strong></label><br>
+                                <input type="email" autocomplete="on" class="form-control" id="Email"
+                                    placeholder="Enter Email" name="Email">
+                                <span id="email-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="ph-number" class="form-label"><strong>Phone Number:</strong></label><br>
+                                <input type="number" class="form-control" id="ph-number" placeholder="00000-00000"
+                                    name="phnumber">
+                                <span id="ph-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="DOB" class="form-label"><strong>Date Of Birth:</strong></label><br>
+                                <input type="date" class="form-control" id="DOB" name="DOB">
+                                <span id="dob-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="Religion" class="form-label"><strong>Religion:</strong></label>
+                                <select class="form-select" id="Religion" name="religion">
+                                    <option>Choose</option>
+                                    <option>Hindu</option>
+                                    <option>Christian</option>
+                                    <option>Muslim</option>
+                                </select>
+                                <span id="religion-error" style="color:red;"></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card shadow">
+                    <form>
+                        <div class="card-header bg-primary text-white text-center p-3">
+                            <h2 style="font-family: poppins;">Academic</h2>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <label for="Degree" class="form-label"><strong>Degree:</strong></label>
+                                <select class="form-select" id="Degree" name="degree">
+                                    <option>Choose</option>
+                                    <option>B.E</option>
+                                    <option>M.E</option>
+                                    <option>B.tech</option>
+                                    <option>M.tech</option>
+                                </select>
+                                <span id="degree-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="Branch" class="form-label"><strong>Branch:</strong></label>
+                                <select class="form-select" id="Branch" name="Branch">
+                                    <option>Choose</option>
+                                    <option>Computer Science </option>
+                                    <option>Aeronatical Engineering</option>
+                                    <option>Information Technology</option>
+                                    <option>Maths</option>
+                                </select>
+                                <span id="branch-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="Year" class="form-label"><strong>Year:</strong></label>
+                                <select class="form-select" id="Year" name="Year">
+                                    <option>Choose</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                </select>
+                                <span id="year-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="Sem" class="form-label"><strong>Semester:</strong></label>
+                                <select class="form-select" id="Sem" name="sem">
+                                    <option>Choose</option>
+                                    <option>I</option>
+                                    <option>II</option>
+                                    <option>III</option>
+                                    <option>IV</option>
+                                </select>
+                                <span id="semester-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="Admn" class="form-label"><strong>Admission:</strong></label>
+                                <select class="form-select" id="Admn" name="admn">
+                                    <option>Choose</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                                <span id="admn-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="lang" class="form-label"><strong>Language Known:</strong></label><br>
+                                <input type="checkbox" class="form-check-input-sm" id="tamil" name="language"
+                                    value="Tamil">
+                                <label class="form-check-label" for="tamil">Tamil</label>
+                                <input type="checkbox" class="form-check-input-sm" id="english" name="language"
+                                    value="English">
+                                <label class="form-check-label" for="english">English</label>
+                                <input type="checkbox" class="form-check-input-sm" id="hindi" name="language"
+                                    value="Hindi">
+                                <label class="form-check-label" for="hindi">Hindi</label><br>
+                                <span id="Lang-error" style="color:red;"></span>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card shadow">
+                    <form>
+                        <div class="card-header bg-primary text-white text-center p-3">
+                            <h2 style="font-family: poppins;">Parent's Information</h2>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <label for="fname" class="form-label"><strong>Father's Name:</strong></label>
+                                <input type="text" class="form-control" id="fname" placeholder="Enter Father's Name"
+                                    name="father-name">
+                                <span id="fname-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="mname" class="form-label"><strong>Mother's Name:</strong></label>
+                                <input type="text" class="form-control" id="mname" placeholder="Enter Mother's Name"
+                                    name="mother-name">
+                                <span id="mname-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="father-occupation" class="form-label"><strong>Father's
+                                        Occupation:</strong></label>
+                                <input type="text" class="form-control" id="father-occupation"
+                                    placeholder="Enter Father's Occupation" name="Father-Occupation">
+                                <span id="foccupation-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="name" class="form-label"><strong>Mother's
+                                        Occupation:</strong></label>
+                                <input type="text" class="form-control" id="mother-occupation"
+                                    placeholder="Enter Mother's Occupation" name="Mother-Occupation">
+                                <span id="moccupation-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="father-Income" class="form-label"><strong>Father's Income:</strong></label>
+                                <input type="number" class="form-control" id="Father-Income"
+                                    placeholder="Enter Father's Income" name="father-income">
+                                <span id="fincome-error" style="color:red;"></span>
+                            </div>
+                            <div>
+                                <label for="Contact-No" class="form-label"><strong>Contact Number:</strong></label><br>
+                                <input type="number" class="form-control" id="Contact-No" placeholder="00000-00000"
+                                    name="contact-no">
+                                <span id="contnum-error" style="color:red;"></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 hgt">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white text-center p-3">
+                        <h2 style="font-family: poppins;">More Details</h2>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div>
+                                <div>
+                                    <label for="Extra-Detail" class="form-label"><strong>Extra Details</strong></label>
+                                    <input type="text" class="form-control" placeholder="add text" id="Extra-Detail">
+                                    <div id="extra-error" style="color:red;"></div>
+                                    <i class="fa-solid fa-trash mt-2" id="icon" onclick="del()"></i>
+                                    <div id="addMore"></div>
+                                    <button type="button" class="btn btn-primary mt-2" onclick="ADD()">Add More</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class=" d-flex justify-content-end mt-3 mb-4" style="column-gap: 15px;">
+                <button type="button" class="btn btn-success " onclick="addView()">View</button>
+                <button type="button" class="btn btn-success " onclick="calculate()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function calculate() {
+            let name = document.getElementById("user-name").value;
+            let gender = document.querySelector('input[name="Gender"]:checked');
+            let mail = document.getElementById("Email").value;
+            let phone = document.getElementById("ph-number").value;
+            let dob = document.getElementById("DOB").value;
+            let religion = document.getElementById("Religion").value;
+            let degree = document.getElementById("Degree").value;
+            let branch = document.getElementById("Branch").value;
+            let year = document.getElementById("Year").value;
+            let semester = document.getElementById("Sem").value;
+            let admission = document.getElementById("Admn").value;
+            let Tamil = document.getElementById("tamil");
+            let English = document.getElementById("english");
+            let Hindi = document.getElementById("hindi");
+            let fname = document.getElementById("fname").value;
+            let mname = document.getElementById("mname").value;
+            let foccu = document.getElementById("father-occupation").value;
+            let moccu = document.getElementById("mother-occupation").value;
+            let fincome = document.getElementById("Father-Income").value;
+            let contnum = document.getElementById("Contact-No").value;
+            let extradetailed = document.getElementById("Extra-Detail");
+
+
+            let valid = true;
+
+            if (name === "") {
+                document.getElementById("user-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                document.getElementById("user-error").innerHTML = " ";
+            }
+            let genderselect = "";
+            if (!gender) {
+                document.getElementById("gender-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                genderselect = gender.value
+                document.getElementById("gender-error").innerHTML = " ";
+            }
+            let p = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/
+            if (mail === "") {
+                document.getElementById("email-error").innerHTML = "*required";
+                valid = false;
+            }
+            else if (!p.test(mail)) {
+                document.getElementById("email-error").innerHTML = "Invalid email format";
+            }
+            else {
+                document.getElementById("email-error").innerHTML = " ";
+            }
+
+            if (phone === "") {
+                document.getElementById("ph-error").innerHTML = "*required";
+                valid = false;
+            } else if (phone.length != 10 || isNaN(phone)) {
+                document.getElementById("ph-error").innerHTML = "Invalid phone number";
+                valid = false;
+            } else {
+                document.getElementById("ph-error").innerHTML = " ";
+            }
+
+
+            if (dob === "") {
+                document.getElementById("dob-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                document.getElementById("dob-error").innerHTML = " ";
+            }
+            if (religion === "Choose" || religion === "") {
+                document.getElementById("religion-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                document.getElementById("religion-error").innerHTML = " ";
+            }
+            if (degree === "Choose" || degree === "") {
+                document.getElementById("degree-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                document.getElementById("degree-error").innerHTML = " ";
+            }
+            if (branch === "Choose" || branch === "") {
+                document.getElementById("branch-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                document.getElementById("branch-error").innerHTML = " ";
+            }
+            if (year === "Choose" || year === "") {
+                document.getElementById("year-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                document.getElementById("year-error").innerHTML = " ";
+            }
+            if (semester === "Choose" || semester === "") {
+                document.getElementById("semester-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                document.getElementById("semester-error").innerHTML = " ";
+            }
+            if (admission === "Choose" || admission === "") {
+                document.getElementById("admn-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                document.getElementById("admn-error").innerHTML = " ";
+            }
+            let langArray = [];
+            if (Tamil.checked) {
+                langArray.push(Tamil.value);
+            }
+            if (English.checked) {
+                langArray.push(English.value);
+            }
+            if (Hindi.checked) {
+             
+                langArray.push(Hindi.value);
+            }
+            if (langArray.length <1) {
+                document.getElementById("Lang-error").innerHTML = "atleast select one language";
+                document.getElementById("Lang-error").innerHTML = "*required ";
+                valid = false;
+            }
+
+            if (fname === "") {
+                document.getElementById("fname-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                document.getElementById("fname-error").innerHTML = " ";
+            }
+            if (mname === "") {
+                document.getElementById("mname-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                document.getElementById("mname-error").innerHTML = " ";
+            }
+            if (foccu === "") {
+                document.getElementById("foccupation-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                document.getElementById("foccupation-error").innerHTML = " ";
+            }
+            if (moccu === "") {
+                document.getElementById("moccupation-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                document.getElementById("moccupation-error").innerHTML = " ";
+            }
+            if (fincome === "") {
+                document.getElementById("fincome-error").innerHTML = "*required";
+                valid = false;
+            }
+            else {
+                document.getElementById("fincome-error").innerHTML = " ";
+            }
+            
+            if (contnum === "") {
+                document.getElementById("contnum-error").innerHTML = "*required";
+                valid = false;
+            } else if (contnum.length != 10 || isNaN(contnum)) {
+                document.getElementById("contnum-error").innerHTML = "Invalid contact number";
+                valid = false;
+            } else {
+                document.getElementById("contnum-error").innerHTML = " ";
+            }
+            const extradetailer = [];
+            if (extradetailed != null) {
+                if (extradetailed.value === "") {
+                    document.getElementById("extra-error").innerHTML = "*required";
+                    valid = false;
+                }
+                else {
+                    document.getElementById("extra-error").innerHTML = "";
+                    extradetailer.push(extradetailed.value);
+                }
+
+            }
+
+            let details = document.getElementsByClassName("Extrafield");
+            for (i = 0; i < details.length; i++) {
+                if (details[i].value == "") {
+                    document.getElementsByClassName("requ")[i].innerHTML = "*required";
+                }
+                else {
+                    document.getElementsByClassName("requ")[i].innerHTML = '';
+                    extradetailer.push(details[i].value);
+                }
+            }
+
+
+
+
+
+            let studentdetail = {
+                studname: name,
+                studgender: genderselect,
+                studmail: mail,
+                studphone: phone,
+                studdob: dob,
+                studreligion: religion,
+                studdegree: degree,
+                studbranch: branch,
+                studyear: year,
+                studsemester: semester,
+                studadmission: admission,
+                studlang: langArray,
+                studfname: fname,
+                studmname: mname,
+                studfoccu: foccu,
+                studmoccu: moccu,
+                studfincome: fincome,
+                studcontnum: contnum,
+                studextra: extradetailer,
+
+
+            }
+            if (valid) {
+                console.log(studentdetail);
+            } else {
+                return;
+            }
+
+            let students = JSON.parse(localStorage.getItem("studentdetail"))
+            if (students == null || students == "") {
+                students = [];
+            }
+            students.push(studentdetail);
+
+            localStorage.setItem("studentdetail", JSON.stringify(students));
+            console.log(students);
+
+            window.location.href = "./index.html"
+
+       
+
+
+
+
+        }
+        let count = 0;
+
+        function ADD() {
+            count++;
+            let myAdd = document.getElementById("addMore");
+            let newInput = document.createElement("input");
+            newInput.setAttribute("class", "form-control Extrafield mt-2");
+            newInput.setAttribute("id", "input" + count);
+            newInput.setAttribute("placeholder", "Add text");
+            newInput.setAttribute("type", "text");
+            myAdd.appendChild(newInput);
+
+            let req = document.createElement("div");
+            req.setAttribute("class", "requ")
+            req.setAttribute("id", "req" + count)
+            myAdd.appendChild(req);
+
+
+            let newIcon = document.createElement("i");
+            newIcon.setAttribute("class", "fa-solid fa-trash mt-2");
+            newIcon.setAttribute("id", "icon" + count);
+
+            newIcon.setAttribute("onclick", "handleDelete(" + count + ")")
+            myAdd.appendChild(newIcon);
+
+
+          
+
+        }
+
+        function handleDelete(count) {
+            let d = document.getElementById("Extra-Detail");
+            let e = document.getElementsByClassName("Extrafield")
+            let f = document.getElementById("input" + count)
+            let g = document.getElementById("icon" + count)
+            if (d) {
+                f.remove();
+                g.remove()
+            } else {
+                if (e.length > 1) {
+                    f.remove();
+                    g.remove()
+                } else {
+                    alert("can't Delete")
+                }
+            }
+        }
+
+        function del() {
+            let a = document.getElementById("icon");
+            let b = document.getElementById("Extra-Detail");
+            let c = document.getElementsByClassName("Extrafield");
+            if (c.length > 0) {
+                a.remove();
+                b.remove();
+            }
+            else {
+                alert("can't delete")
+            }
+        }
+        function editButton(i) {
+
+            let students = JSON.parse(localStorage.getItem("studentdetail")) || [];
+            let studentList = students[i];
+
+            if (!studentList) {
+                console.error("No student found at index:", i);
+                return;
+            }
+            console.log(studentList);
+
+            document.getElementById("user-name").value = studentList.studname;
+            document.querySelector('input[name="Gender"][value="' + studentList.studgender + '"]').checked = true;
+            document.getElementById("Email").value = studentList.studmail;
+            document.getElementById("ph-number").value = studentList.studphone;
+            document.getElementById("DOB").value = studentList.studdob;
+            document.getElementById("Religion").value = studentList.studreligion;
+            document.getElementById("Degree").value = studentList.studdegree;
+            document.getElementById("Branch").value = studentList.studbranch;
+            document.getElementById("Year").value = studentList.studyear;
+            document.getElementById("Sem").value = studentList.studsemester;
+            document.getElementById("Admn").value = studentList.studadmission;
+            document.getElementById("fname").value = studentList.studfname;
+            document.getElementById("mname").value = studentList.studmname;
+            document.getElementById("father-occupation").value = studentList.studfoccu;
+            document.getElementById("mother-occupation").value = studentList.studmoccu;
+            document.getElementById("Father-Income").value = studentList.studfincome;
+            document.getElementById("Contact-No").value = studentList.studcontnum;
+            document.getElementById("Extra-Detail").value = studentList.studextra[0]
+
+            for(let i=1 ;i<studentList.studextra.length;i++){
+                ADD();
+            }
+
+            for(let i=1 ;i<studentList.studextra.length;i++){
+                document.getElementById("input"+i).value = studentList.studextra[i]
+            }
+
+            document.getElementById("tamil").checked = studentList.studlang.includes("Tamil");
+            document.getElementById("english").checked = studentList.studlang.includes("English");
+            document.getElementById("hindi").checked = studentList.studlang.includes("Hindi")
+
+
+
+
+            if(i){
+                students.splice(i, 1);
+                 localStorage.setItem("studentdetail", JSON.stringify(students));
+            }
+       
+            
+   
+
+        }
+
+        window.onload = function edit() {
+            let url_str = window.location.href;
+            let url = new URL(url_str);
+            var i = url.searchParams.get('id');
+            if (i) {
+                editButton(i);
+            }
+
+        }
+
+
+        function addView() {
+            window.location.href = "./index.html"
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

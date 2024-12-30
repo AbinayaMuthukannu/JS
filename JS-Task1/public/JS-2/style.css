@@ -1,0 +1,10 @@
+.odd {
+    text-align: center;
+    padding: 20px;
+    color: blue;
+    font-family: poppins;
+}
+
+.form-floating {
+    width: 40%;
+}

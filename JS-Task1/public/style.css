@@ -1,0 +1,13 @@
+.c1{
+    text-align: center;
+    font-family: poppins;
+    color: aliceblue;
+    
+}
+@media (max-width: 480px) {
+    .d-flex {
+        flex-direction: column;
+         align-items: center;
+         gap: 15px;  
+    }
+}
